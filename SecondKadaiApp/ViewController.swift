@@ -9,10 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var fieldA: UITextField!
+    @IBAction func handle(_ sender: Any) {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func goback(_segue: UIStoryboardSegue){
+        
     }
 
 
