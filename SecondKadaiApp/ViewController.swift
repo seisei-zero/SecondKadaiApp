@@ -10,10 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var fieldA: UITextField!
-    @IBAction func handle(_ sender: Any) {
+    @IBOutlet weak var textfield1: UITextField!
+    var text2:String?
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let resultViewController:ResultViewController = segue.destination as! ResultViewController
+        
+        resultViewController.text1 = "こんにちは、\(textfield1.text!)さん"
         
     }
+    @IBAction func back(_ sender: UIStoryboardSegue) {
+        
+    }
+   
     
     
     override func viewDidLoad() {
@@ -22,10 +30,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func goback(_segue: UIStoryboardSegue){
-        
-    }
-
+    
 
 }
 

@@ -46,7 +46,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="fieldA" destination="egX-zS-plE" id="adB-iC-b8n"/>
+                        <outlet property="textfield1" destination="egX-zS-plE" id="2V9-eq-DLm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -71,7 +71,7 @@
                                 <rect key="frame" x="191.5" y="221" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="tEU-85-cHK" kind="unwind" unwindAction="gobackWith_segue:" id="I79-38-E8D"/>
+                                    <segue destination="tEU-85-cHK" kind="unwind" unwindAction="back:" id="Zfd-T1-Y7g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,6 +85,9 @@
                         <viewLayoutGuide key="safeArea" id="EH5-oa-CVf"/>
                     </view>
                     <navigationItem key="navigationItem" id="XBv-9d-Fch"/>
+                    <connections>
+                        <outlet property="label" destination="rEy-qb-vZD" id="gvR-8W-lzV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOV-B6-xJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="tEU-85-cHK" userLabel="Exit" sceneMemberID="exit"/>
